@@ -1,0 +1,929 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body,html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+}
+
+.head {
+width: 100%;
+height: 100vh;
+position: relative;
+}
+
+.head::after {
+width:100%;
+height:100vh;
+content: '';
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.bg {
+width: 100%;
+height: 100vh;
+top: 0px;
+object-fit: cover;
+filter: brightness(0.6);
+}
+
+.head-text {
+top: 180px;
+font-style: normal;
+font-weight: 100;
+font-size: 45px;
+line-height: 145px;
+color: #FDFDFD;
+position: absolute;
+z-index: 1;
+top: 100px;
+left: 50px;
+}
+
+.h-text {
+    font-size: 100px;
+}
+
+
+.container {
+    background: url(img/메인2.png)no-repeat;
+    background-attachment: fixed; /*백그라운드를 고정해서 붙이겠다*/
+    width: 100%;
+    min-height: 1000px;
+    position: relative;
+    background-size: cover;
+}
+
+.container2 {
+    background: url(img/메인2.png)no-repeat;
+    background-attachment: fixed; /*백그라운드를 고정해서 붙이겠다*/
+    width: 100%;
+    min-height: 1000px;
+    position: relative;
+    background-size: cover;
+}
+
+.container::after {
+    width:100%;
+    min-height:100%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container2>h1 {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 60px;
+    background: #030303;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 36px;
+    line-height: 60px;
+}
+
+h1 {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 60px;
+    background: #030303;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+}
+
+.container p {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 70px;
+    transform: translate(-50%,-50%);
+    color: #fdfdfd;
+    background: #030303;
+    text-align: center;
+    line-height: 30px;
+    width: 500px;
+    height: 100px;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------*/
+
+.less0 {
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 10px;
+    position: relative;
+    background-size: cover;
+}
+
+.box0 {
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background: #030303;
+    background-size: cover;
+}
+
+/*------------------------------------------------*/
+
+.less {
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    background-size: cover;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.whom>h2, .whom>p {
+    color: #f1f1f1;
+}
+
+.whom>h2 {
+    font-size: 36px;
+}
+
+.whom>p {
+    font-size: 24px;
+}
+
+.whom, .trans-text, .place-text, .weather-text {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*------------------------------------------------------------*/
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.card{
+    width: 400px;
+    margin: 0 auto;
+    height: 400px;
+    position: relative;
+    transition: transform 4s ease-in;
+    overflow: hidden;
+    border:4px solid #fff;
+    float: left;
+    background-size: cover;
+}
+
+.card>img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 1s ease-in;
+}
+
+.card>img:hover{
+    transform: scale(1.2);
+}
+
+.card:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    content: "사랑하는 사람과 함께";
+    transform:translateY(-100%);
+    font-size: 25px;
+    color:#fff;
+    display: block;
+    background-color: rgba(188, 143, 143, 0.137);
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s ease-in;
+    border:4px solid white;
+    box-sizing: border-box;
+}
+
+.card:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    content: "사랑하는 사람과 함께";
+    transform:translateY(100%);
+    font-size: 25px;
+    color:#fff;
+    display: block;
+    background-color: rgba(188, 143, 143, 0.137);
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s ease-in;
+    border:4px solid white;
+    box-sizing: border-box;
+}
+
+.card:hover::before{
+    transform: translateY(0%); 
+}
+
+.card:hover::after{
+    transform: translateY(0%); 
+}
+
+/*-------------------------------------------------------*/
+.less2 {
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.box2 {
+    width: 100%;
+    min-height: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.trans-text>h2 {
+    font-size: 36px;
+}
+
+.trans-text>p {
+    font-size: 24px;
+}
+
+/*----------------------------------------------------*/
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+  
+.cols{
+    display: flex;
+    justify-content: center;
+}
+  
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+  
+.wrap{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+  
+.front, .back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+  
+.back{
+    background: #cedce7;
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+  
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.wrap:hover .front, .wrap:hover .back{
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+  
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.inner{
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.inner>p {
+    font-size: 34px !important;
+}
+
+.inner>span {
+    font-size: 20px;
+}
+
+.inner>img {
+    width: 100%;
+    height: 100%;
+}
+  
+.wrap .back{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+  
+.wrap .front{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+  
+.wrap:hover .back{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+  
+.wrap:hover .front{
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+.front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+    .col{
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem){
+    .col{
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem){
+    .col{
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+/*---------------------------------------------------*/
+
+.container3 {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 500px;
+    background-color: #030303;
+  }
+  
+.box5 {
+    flex: 1;
+    overflow: hidden;
+    transition: 1s;
+    margin: 0 2%;
+    line-height: 0;
+}
+
+.box5 > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+    transition: 1s;
+}
+  
+.box5:hover { 
+    flex: 1 1 50%; 
+}
+
+.box5:hover > img {
+    width: 100%;
+    height: 500px;
+}
+
+.place-text>h2 {
+    font-size: 36px;
+}
+
+.place-text>p {
+    font-size: 24px;
+}
+   
+
+/*-----------------------------------------------------*/
+
+.less3 {
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+    background-size: cover;
+}
+
+.box3 {
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-size: cover;
+}
+
+h2 p {
+    padding: 12px;
+    margin: 12px;
+}
+
+.box4 {
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.weather-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.weather-text {
+  text-align: center;
+}
+
+.weather-text>h2 {
+    font-size: 36px;
+}
+
+.weather-text>p {
+    font-size: 24px;
+}
+
+.wrapper{
+  margin: 0 a;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner{
+  list-style: none;
+}
+
+.weather-img {
+  width: 285px;
+  height: 232px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 115px 115px 0px 0px;
+  margin: 10px;
+}
+
+.photobanner {
+ position: relative;
+ display: flex;
+ width: 100%;
+}
+
+.photobanner {
+animation: bannermove 20s linear infinite alternate-reverse;
+}
+
+.weather-text>h2 {
+    color: #000000;
+}
+
+@keyframes bannermove {
+from {
+  left: 0px;
+}
+to {
+  left: -1000px;
+}
+}
+
+/*---------------------------------------------*/
+
+  #footer {
+    position: relative;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #footer a:hover {
+    text-decoration: underline;
+  }
+
+  #footer .footer-box {
+    padding: 20px 20px;
+    background: #030303;
+  }
+
+  #footer .row {
+    display: flex;
+    padding: 10px 20px;
+    background: #1328BA;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #footer .footer-box {
+      padding: 20px 20px;
+      background: #030303;
+    }
+    #footer .row {
+      display: block;
+      padding: 20px 20px;
+    }
+  }
+  
+  /* footer-logo */
+  
+  #footer .logo {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 20px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 767px) {
+    #footer .logo {
+      font-size: 10px;
+      top: 10px;
+    }
+  }
+  
+  /* left */
+  
+  .left-row {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  #footer .left {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+  }
+
+  #footer .left li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+
+  #footer .left li:first-child {
+    margin-left: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .left-row {
+      display: block;
+      margin-top: 15px;
+    }
+    #footer .left {
+      font-size: 8px;
+    }
+    #footer .left li {
+      margin-top: 5px;
+      font-size: 8px;
+    }
+  }
+  
+  /* sns */
+  
+  #footer .sns {
+    margin: 0 0 0 auto;
+    padding: 0;
+  }
+  #footer .sns li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 24px;
+  }
+  #footer .sns li:last-child {
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #footer .sns {
+      margin: 20px 0 0;
+      padding: 0;
+    }
+    #footer .sns li {
+      margin: 0 20px 0 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+  
+  /* email */
+  
+  #footer .email {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #footer .email li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-size: 12px;
+  }
+  #footer .email li:first-child {
+    margin-left: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #footer .email {
+      width: 100%;
+      text-align: center;
+      font-size: 8px;
+    }
+  }
+  
+  /* copyright */
+  
+  #footer .copyright {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: #FDFDFD;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 767px) {
+    #footer .copyright {
+      width: 100%;
+      margin: 20px 0 0;
+      text-align: center;
+      font-size: 8px;
+    }
+  }
+  
+/*------------------------------------------------------------------------*/  
+
+@media(max-width:1240px) {
+    .head-text {
+        font-size: 20px;
+        line-height: 100px;
+        top: 200px;
+        left: 20;
+    }
+
+    .h-text {
+        font-size: 40px;
+    }
+
+    .container, .container2 {
+        min-height: 434px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .whom>h2 {
+        font-size: 30px;
+    }
+    
+    .whom>p {
+        font-size: 16px;
+    }
+
+    .whom, .trans-text, .place-text, .weather-text {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .trans-text>h2 {
+        font-size: 30px;
+    }
+
+    .trans-text>p {
+        font-size: 16px;
+    }
+
+    .inner>p {
+        font-size: 30px !important;
+    }
+    
+    .inner>span {
+        font-size: 16px;
+    }
+
+    .container3 {
+        height: 487px;
+    }
+
+    .place-text>h2 {
+        font-size: 30px;
+    }
+    
+    .place-text>p {
+        font-size: 16px;
+    }
+
+    .weather-text>h2 {
+        font-size: 30px;
+    }
+    
+    .weather-text>p {
+        font-size: 16px;
+    }
+
+    .container2>h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .head-text {
+        font-size: 16px;
+        line-height: 40px;
+        top: 300px;
+        left: 20;
+    }
+
+    .h-text {
+        font-size: 20px;
+    }
+
+    .container, .container2 {
+        height: 195px;
+    }
+
+    h1 {
+        font-size: 16px;
+        width: 217px;
+        height: 30px;
+        line-height: 25px;
+    }
+
+    .container p {
+        font-size: 10px;
+        width: 217px;
+        height: 60px;
+        line-height: 18px;
+        margin-top: 40px;
+    }
+
+    .box {
+        min-height: 90px;
+    }
+
+    .whom>h2 {
+        font-size: 16px;
+    }
+    
+    .whom>p {
+        font-size: 10px;
+    }
+
+    .whom, .trans-text, .place-text, .weather-text {
+        margin-top: 25px;
+    }
+
+    .less {
+        min-height: 115px;
+    }
+
+    .card:before, .card::after {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        max-width: 350px;
+    }
+
+    .trans-text>h2 {
+        font-size: 16px;
+    }
+    
+    .trans-text>p {
+        font-size: 10px;
+    }
+
+    .cols{
+        flex-wrap: wrap;
+    }
+
+    .place-text>h2 {
+        font-size: 16px;
+    }
+    
+    .place-text>p {
+        font-size: 10px;
+    }
+
+    .weather-text>h2 {
+        font-size: 16px;
+    }
+    
+    .weather-text>p {
+        font-size: 10px;
+    }
+
+    .container2>h1 {
+        font-size: 16px;
+    }
+
+}
