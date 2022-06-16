@@ -20,41 +20,41 @@ header {
 }
 
 .head {
-width: 100%;
-height: 100vh;
-position: relative;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .head::after {
-width:100%;
-height:100vh;
-content: '';
-display: block;
-position: absolute;
-top: 0;
-left: 0;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width:100%;
+    height:100vh;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .bg {
-width: 100%;
-height: 100vh;
-top: 0px;
-object-fit: cover;
-filter: brightness(0.6);
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
 .head-text {
-top: 180px;
-font-style: normal;
-font-weight: 100;
-font-size: 45px;
-line-height: 3em;
-color: #FDFDFD;
-position: absolute;
-z-index: 1;
-top: 100px;
-left: 50px;
+    top: 180px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 45px;
+    line-height: 3em;
+    color: #FDFDFD;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 50px;
 }
 
 .h-text {
@@ -203,7 +203,6 @@ h1 {
     margin: 0 auto;
     height: 400px;
     position: relative;
-    transition: 1s ease-in;
     overflow: hidden;
     border:4px solid #fff;
     float: left;
@@ -214,11 +213,6 @@ h1 {
     width:100%;
     height: 400px;
     object-fit: cover;
-    transition: 1s;
-}
-
-.card>img:hover{
-    transform: scale(1.2);
 }
 
 .card:before {
@@ -370,6 +364,10 @@ h1 {
 
 .inner>span {
     font-size: 20px;
+}
+
+.hidden {
+    display: none;
 }
 
 .inner>img {
@@ -788,10 +786,6 @@ to {
         font-size: 10px;
     }
 
-    .card:before, .card::after {
-        font-size: 16px;
-    }
-
     .wrapper {
         max-width: 350px;
     }
@@ -804,5 +798,59 @@ to {
     .container2>h1 {
         font-size: 16px;
     }
+
+    /*-----------------------------------------------------------*/
+
+    .card::before, .card::after {
+        width:100%;
+        height:100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "나에게로 떠나는 여행 \A +더 알아보기" ;
+        white-space:pre; 
+        text-align: center;
+        transform:none;
+        font-size: 16px;
+        color:#fff;
+        background-color: rgba(188, 143, 143, 0.137);
+        z-index: 1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two::before,.two::after{
+        content: "사랑하는 사람과 함께 \A +더 알아보기";
+        white-space:pre; 
+        text-align: center;
+    }
+    
+    .three::before, .three::after{
+        content: "가족과 보내는 시간 \A +더 알아보기";
+        white-space:pre; 
+        text-align: center;
+    }
+
+    /*------------------------------------------------------------*/
+
+    .inner>img {
+        filter: brightness(0.4);
+    }
+
+    .show {
+
+    }
+
+    .hidden{
+
+    }
+    /*------------------------------------------------------------*/
+
+    .box5>img:hover {
+        filter: brightness(0.4);
+    }
+
+    
 
 }
