@@ -70,6 +70,7 @@ header {
     min-height: 1000px;
     position: relative;
     background-size: cover;
+    text-align: center;
 }
 
 .container2 {
@@ -203,7 +204,7 @@ h1 {
     height: 400px;
     position: relative;
     overflow: hidden;
-    border:4px solid #fff;
+    border:4px solid #fdfdfd;
     float: left;
     background-size: cover;
 }
@@ -223,7 +224,7 @@ h1 {
     content: "나에게로 떠나는 여행";
     transform:translateY(-100%);
     font-size: 25px;
-    color:#fff;
+    color:#fdfdfd;
     display: block;
     background-color: rgba(188, 143, 143, 0.137);
     z-index: 1;
@@ -231,7 +232,7 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    border:4px solid white;
+    border:4px solid #fdfdfd;
     box-sizing: border-box;
 }
 
@@ -244,7 +245,7 @@ h1 {
     content: "나에게로 떠나는 여행";
     transform:translateY(100%);
     font-size: 25px;
-    color:#fff;
+    color:#fdfdfd;
     display: block;
     background-color: rgba(188, 143, 143, 0.137);
     z-index: 1;
@@ -252,7 +253,7 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    border:4px solid white;
+    border:4px solid #fdfdfd;
     box-sizing: border-box;
 }
 
@@ -471,8 +472,6 @@ h1 {
     height: 400px;
 }
    
-
-
 /*-----------------------------------------------------*/
 
 h2 p {
@@ -861,10 +860,6 @@ to {
         text-align: center;
     }
 
-    .card:hover {
-        filter: brightness(0.6);
-    }
-
     /*------------------------------------------------------------*/
 
     .inner>img {
@@ -872,13 +867,9 @@ to {
     }
 
     .show {
-
+        font-size: 16px;
     }
-
-    .hidden{
-
-    }
-    /*------------------------------------------------------------*/
     
+    /*------------------------------------------------------------*/
 
 }
