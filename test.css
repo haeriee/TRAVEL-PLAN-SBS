@@ -101,7 +101,7 @@ header {
     width: 300px;
     height: 60px;
     background: #030303;
-    color: #f1f1f1;
+    color: #fdfdfd;
     text-align: center;
     font-size: 36px;
     line-height: 60px;
@@ -116,7 +116,7 @@ h1 {
     width: 40%;;
     height: 60px;
     background: #030303;
-    color: #f1f1f1;
+    color: #fdfdfd;
     text-align: center;
     line-height: 50px;
     font-size: 36px;
@@ -314,7 +314,7 @@ h1 {
 }
   
 .back{
-    background: #cedce7;
+    background: #fdfdfd;
     background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
 }
   
@@ -328,7 +328,7 @@ h1 {
     content: '';
     display: block;
     opacity: .6;
-    background-color: #000;
+    background-color: #030303;
     backface-visibility: hidden;
     border-radius: 10px;
 }
@@ -406,7 +406,7 @@ h1 {
     width: 4rem;
     height: 2px;
     position: absolute;
-    background: #C6D4DF;
+    background: #fdfdfd;
     display: block;
     left: 0;
     right: 0;
@@ -446,9 +446,10 @@ h1 {
     box-sizing: border-box;
     height: 400px;
     background-color: #030303;
-  }
+}
   
 .box5 {
+    position: relative;
     flex: 1;
     overflow: hidden;
     transition: 1s;
@@ -470,8 +471,36 @@ h1 {
 .box5:hover > img {
     width: 100%;
     height: 400px;
+    filter: brightness(0.4);
 }
-   
+
+.show2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fdfdfd;
+    word-break: keep-all;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hidden2 {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fdfdfd;
+    white-space: nowrap;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden2:hover {
+    color: #030303;
+}
+
+
 /*-----------------------------------------------------*/
 
 h2 p {
@@ -513,7 +542,7 @@ animation: bannermove 20s linear infinite alternate-reverse;
 }
 
 .weather-text>h2 {
-    color: #000000;
+    color: #030303;
 }
 
 @keyframes bannermove {
@@ -533,7 +562,7 @@ to {
 
   #footer a {
     text-decoration: none;
-    color: #fff;
+    color: #fdfdfd;
   }
 
   #footer a:hover {
@@ -551,16 +580,6 @@ to {
     background: #1328BA;
   }
   
-  @media screen and (max-width: 767px) {
-    #footer .footer-box {
-      padding: 20px 20px;
-      background: #030303;
-    }
-    #footer .row {
-      display: block;
-      padding: 20px 20px;
-    }
-  }
   
   /* footer-logo */
   
@@ -572,13 +591,6 @@ to {
     width: 100%;
     font-size: 24px;
     font-weight: bold;
-  }
-
-  @media screen and (max-width: 767px) {
-    #footer .logo {
-      font-size: 10px;
-      top: 10px;
-    }
   }
   
   /* left */
@@ -605,20 +617,6 @@ to {
     margin-left: 0;
   }
   
-  @media screen and (max-width: 767px) {
-    .left-row {
-      display: block;
-      margin-top: 15px;
-    }
-    #footer .left {
-      font-size: 8px;
-    }
-    #footer .left li {
-      margin-top: 5px;
-      font-size: 8px;
-    }
-  }
-  
   /* sns */
   
   #footer .sns {
@@ -634,19 +632,7 @@ to {
   #footer .sns li:last-child {
     margin-right: 0;
   }
-  
-  @media screen and (max-width: 767px) {
-    #footer .sns {
-      margin: 20px 0 0;
-      padding: 0;
-    }
-    #footer .sns li {
-      margin: 0 20px 0 0;
-      padding: 0;
-      font-size: 8px;
-    }
-  }
-  
+
   /* email */
   
   #footer .email {
@@ -665,14 +651,6 @@ to {
     margin-left: 0;
   }
   
-  @media screen and (max-width: 767px) {
-    #footer .email {
-      width: 100%;
-      text-align: center;
-      font-size: 8px;
-    }
-  }
-  
   /* copyright */
   
   #footer .copyright {
@@ -682,15 +660,6 @@ to {
     text-align: right;
     color: #FDFDFD;
     font-size: 12px;
-  }
-
-  @media screen and (max-width: 767px) {
-    #footer .copyright {
-      width: 100%;
-      margin: 20px 0 0;
-      text-align: center;
-      font-size: 8px;
-    }
   }
   
 /*------------------------------------------------------------------------*/  
@@ -753,10 +722,67 @@ to {
     .container2>h1 {
         font-size: 30px;
     }
+
 }
 
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
 
-@media(max-width: 400px) {
+@media screen and (max-width: 767px) {
+    #footer .footer-box {
+        padding: 20px 20px;
+        background: #030303;
+    }
+    #footer .row {
+        display: block;
+        padding: 20px 20px;
+    }
+
+    #footer .logo {
+        font-size: 10px;
+        top: 10px;
+    }
+
+    .left-row {
+        display: block;
+        margin-top: 15px;
+    }
+    #footer .left {
+        font-size: 8px;
+    }
+    #footer .left li {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+    #footer .sns {
+        margin: 20px 0 0;
+        padding: 0;
+      }
+      #footer .sns li {
+        margin: 0 20px 0 0;
+        padding: 0;
+        font-size: 8px;
+      }
+
+      #footer .email {
+        width: 100%;
+        text-align: center;
+        font-size: 8px;
+      }
+
+      #footer .copyright {
+        width: 100%;
+        margin: 20px 0 0;
+        text-align: center;
+        font-size: 8px;
+      }
+  }
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+@media(max-width: 500px) {
 
     body,html {
         height: 100%;
@@ -800,17 +826,21 @@ to {
         margin-top: 40px;
     }
 
+    .less {
+        top: 15px;
+    }
+
     .box {
         min-height: 90px;
     }
 
     .text>h2 {
-        font-size: 16px;
+        font-size: 24px;
         margin-top: 30px;
     }
     
     .text>p {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .wrapper {
@@ -828,36 +858,43 @@ to {
 
     /*-----------------------------------------------------------*/
 
-    .card::before, .card::after {
+    .card::before{
         width:100%;
         height:100%;
         position: absolute;
         top: 0;
         left: 0;
-        content: "나에게로 떠나는 여행 \A +더 알아보기" ;
+        content: "나에게로 떠나는 여행" ;
         white-space:pre; 
         text-align: center;
         transform:none;
         font-size: 16px;
-        color:#fff;
+        color:#fdfdfd;
         background-color: rgba(188, 143, 143, 0.137);
         z-index: 1;
         display:flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .card::after,.two::after, .three::after {
+        display: block;
+        content: 'MORE +';
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        border: 1px solid #fdfdfd;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
         cursor: pointer;
     }
 
-    .two::before,.two::after{
-        content: "사랑하는 사람과 함께 \A +더 알아보기";
-        white-space:pre; 
-        text-align: center;
-    }
-    
-    .three::before, .three::after{
-        content: "가족과 보내는 시간 \A +더 알아보기";
-        white-space:pre; 
-        text-align: center;
+    .card:hover::after {
+        transform: translateX(-50%);
     }
 
     /*------------------------------------------------------------*/
@@ -865,11 +902,15 @@ to {
     .inner>img {
         filter: brightness(0.4);
     }
-
-    .show {
-        font-size: 16px;
-    }
     
     /*------------------------------------------------------------*/
+
+    .show2 {
+        font-size: 20px;
+    }
+    
+    .hidden2 {
+        font-size: 16px;
+    }
 
 }
