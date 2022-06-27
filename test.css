@@ -292,6 +292,14 @@ h1 {
     margin: 1rem;
     cursor: pointer;
 }
+
+.col {
+    transform-style: preserve-3d;
+}
+
+.flip {
+    animation: flip 1s;
+}
   
 .wrap{
     transform-style: preserve-3d;
@@ -417,6 +425,16 @@ h1 {
 .front .inner span{
     color: rgba(255,255,255,0.7);
     font-weight: 300;
+}
+
+@keyframes flip {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
 }
 
 @media screen and (max-width: 64rem){
