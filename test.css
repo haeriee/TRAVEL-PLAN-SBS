@@ -92,7 +92,7 @@ header {
     left: 0;
 }
 
-.container2>h1 {
+.container2>.heal {
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -107,7 +107,7 @@ header {
     line-height: 60px;
 }
 
-h1 {
+.heal {
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -708,7 +708,7 @@ h1 {
         min-height: 434px;
     }
 
-    h1 {
+    .heal {
         font-size: 30px;
         width: 100%;
     }
@@ -826,7 +826,7 @@ h1 {
         height: 195px;
     }
 
-    h1 {
+    .heal {
         font-size: 16px;
         width: 100%;
         height: 30px;
